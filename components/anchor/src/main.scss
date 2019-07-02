@@ -1,0 +1,22 @@
+/* write style here */
+.biz-anchor {
+    border-left: 2px solid #e8e8e8;
+    font-size: 14px;
+    background: #fff;
+
+    .biz-anchor-link-title {
+        position: relative;
+        display: block;
+        margin-bottom: 6px;
+        overflow: hidden;
+        color: rgba(0, 0, 0, 0.65);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-decoration: none;
+    }
+
+    .biz-anchor-link {
+        padding: 7px 0 7px 16px;
+        line-height: 1;
+    }
+}
