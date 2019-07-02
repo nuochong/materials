@@ -1,8 +1,15 @@
 /* write style here */
+@import '~@alifd/next/variables.scss';
+
 .biz-anchor {
     border-left: 2px solid #e8e8e8;
     font-size: 14px;
     background: #fff;
+
+    .biz-anchor-link {
+        padding: 7px 0 7px 16px;
+        line-height: 1;
+    }
 
     .biz-anchor-link-title {
         position: relative;
@@ -15,8 +22,7 @@
         text-decoration: none;
     }
 
-    .biz-anchor-link {
-        padding: 7px 0 7px 16px;
-        line-height: 1;
+    .biz-anchor-link-active a {
+        color: $color-brand1-6;
     }
 }

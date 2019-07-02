@@ -15,14 +15,15 @@ export default {
   },
   adaptor: (props) => {
     const data = parseData(props.data);
+    console.log(data)
 
     const children = data.map(item => {
       if (!item.children.length) {
-        return <Link title={item.value} key={item.value}/>
+        return <Link title={item.value} key={item.value} active={item.state === 'active'}/>
       } else {
-        return <Link title={item.value} key={item.value}>
+        return <Link title={item.value} key={item.value} active={item.state === 'active'}>
           {item.children.map(child => {
-            return <Link title={child.value} key={child.value}/>
+            return <Link title={child.value} key={child.value} active={child.state === 'active'}/>
           })}
         </Link>
       }
