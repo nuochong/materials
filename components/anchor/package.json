@@ -44,7 +44,7 @@
     "title": "锚点",
     "categories": []
   },
-  "homepage": "https://unpkg.com/@alifd/biz-anchor@1.0.0/build/index.html",
+  "homepage": "https://unpkg.com/@alifd/biz-anchor@1.0.1/build/index.html",
   "publishConfig": {
     "access": "public",
     "registry": "http://registry.npmjs.org"
