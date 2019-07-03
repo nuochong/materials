@@ -1,5 +1,5 @@
 /* write style here */
-@import '~@alifd/next/variables.scss';
+@import '~@alifd/next/lib/core/index.scss';
 
 .biz-anchor {
     border-left: 2px solid #e8e8e8;
@@ -22,7 +22,7 @@
         text-decoration: none;
     }
 
-    .biz-anchor-link-active a {
+    .biz-anchor-link-active > a {
         color: $color-brand1-6;
     }
 }

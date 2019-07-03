@@ -7,17 +7,21 @@ export default {
   name: 'Anchor', // 组件名称
   editor: () => {
     return {
-      props: [],
+      props: [{
+        name: 'width',
+        type: 'number',
+        default: 200
+      }],
       data: {
         default: 'Basic demo\nStatic demo\nAPI\n\tusage of type\n\tusage of size'
       }
     };
   },
   adaptor: (props) => {
-    const data = parseData(props.data);
-    console.log(data)
+    const { width, data, ...others } = props;
+    const list = parseData(data);
 
-    const children = data.map(item => {
+    const children = list.map(item => {
       if (!item.children.length) {
         return <Link title={item.value} key={item.value} active={item.state === 'active'}/>
       } else {
@@ -31,7 +35,7 @@ export default {
 
     return (
       // eslint-disable-next-line react/react-in-jsx-scope
-      <MainComponent component="div" {...props} >{children}</MainComponent>
+      <MainComponent component="div" {...others} style={{width}}>{children}</MainComponent>
     );
   },
 };
