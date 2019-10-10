@@ -1,5 +1,5 @@
 ---
-title: Simple Usage
+title: basic
 order: 1
 importStyle: true
 ---
@@ -14,7 +14,7 @@ import Anchor, {Link} from '@alifd/biz-anchor';
 class App extends Component {
   render() {
     return (
-      <Anchor offsetTop={60} style={{width: 200}}>
+      <Anchor offsetTop={30} style={{width: 200}}>
         <Link href="#components-guide" title="Guide" />
         <Link href="#components-example" title="Example" />
         <Link href="#API" title="API">

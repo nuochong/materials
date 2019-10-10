@@ -13,7 +13,7 @@ export default {
         default: 200
       }],
       data: {
-        default: 'Basic demo\nStatic demo\nAPI\n\tusage of type\n\tusage of size'
+        default: 'Basic demo\n*Static demo\nAPI\n\tusage of type\n\tusage of size'
       }
     };
   },

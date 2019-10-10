@@ -2,13 +2,19 @@
 @import '~@alifd/next/lib/core/index.scss';
 
 .biz-anchor {
-    border-left: 2px solid #e8e8e8;
     font-size: 14px;
     background: #fff;
 
     .biz-anchor-link {
-        padding: 7px 0 7px 16px;
+        padding: 6px 0 6px 16px;
         line-height: 1;
+        border-left: 2px solid #e8e8e8;
+    }
+    .biz-anchor-link-level-2 {
+        padding-left: 32px;
+    }
+    .biz-anchor-link-level-3 {
+        padding-left: 48px;
     }
 
     .biz-anchor-link-title {
@@ -20,6 +26,9 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         text-decoration: none;
+    }
+    .biz-anchor-link-active {
+        border-left-color: $color-brand1-6;
     }
 
     .biz-anchor-link-active > a {
