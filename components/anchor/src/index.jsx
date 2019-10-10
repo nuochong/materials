@@ -21,8 +21,7 @@ export default class BizAnchor extends React.Component {
 
   componentDidMount() {
     if (this.props.content()) {
-      this.setState({
-      })
+      this.setState({})
     }
   }
 
