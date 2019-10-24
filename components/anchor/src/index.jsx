@@ -91,7 +91,7 @@ export default class BizAnchor extends React.Component {
   render() {
     const { children, className, component, content, ...others } = this.props;
     const cls = classNames({
-      className: !!className,
+      [className]: !!className,
       'biz-anchor': true
     });
 

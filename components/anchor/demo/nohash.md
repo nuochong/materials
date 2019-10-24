@@ -25,7 +25,7 @@ class App extends Component {
         <li>设计规范一致性问题</li>
       </div>
       <div style={{right: 0, top: 0, position: 'absolute'}}>
-        <Anchor offsetTop={60} style={{width: 160}} noHash content={() => document.getElementById('content')}></Anchor>
+        <Anchor offsetTop={10} style={{width: 160}} noHash content={() => document.getElementById('content')}></Anchor>
       </div>
     </div>);
   }
